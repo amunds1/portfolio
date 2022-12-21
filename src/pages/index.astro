@@ -25,6 +25,9 @@ export interface Props {
         </p>
 
         <div class="contact">
+          <a href="mailto:andreas@amundsen.dev"
+            ><img src="mail.png" height="auto" width="50px" />
+          </a>
           <a href={"https://github.com/amunds1"} target="_blank">
             <img src="github.png" height="auto" width="50px" />
           </a>
@@ -33,9 +36,6 @@ export interface Props {
             target="_blank"
           >
             <img src="linkedin.png" height="auto" width="50px" />
-          </a>
-          <a href="mailto:andreas@amundsen.dev"
-            ><img src="mail.png" height="auto" width="50px" />
           </a>
         </div>
       </div>
@@ -51,7 +51,7 @@ export interface Props {
   main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 80ch;
+    max-width: 60ch;
   }
   h1 {
     font-size: 3rem;
@@ -66,15 +66,15 @@ export interface Props {
     background-position: 0%;
   }
   .aboutMe {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     line-height: 1.6;
     margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
+    /* border: 1px solid rgba(var(--accent), 25%); */
+    /* background-color: white; */
+
     border-radius: 0.4rem;
     width: 100%;
   }
@@ -82,11 +82,13 @@ export interface Props {
   .aboutMe > div {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 70%;
     justify-content: space-between;
+    font-size: large;
   }
 
   .contact {
+    display: flex;
     flex-direction: row;
   }
 
@@ -101,7 +103,8 @@ export interface Props {
     gap: 1rem;
   }
   .profileImage {
-    border-radius: 10%;
-    width: 20rem;
+    border-radius: 5%;
+    max-width: 20rem;
+    width: 100%;
   }
 </style>
