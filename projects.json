@@ -1,0 +1,66 @@
+[
+  {
+    "title": "5x5game",
+    "body": "A game which is developed to be used in my master thesis at NTNU, fall 2023",
+    "href": "https://github.com/amunds1/5x5game-masterthesis",
+    "showcaseImage": "",
+    "createdWith": [
+      "/languages/nextjs.png",
+      "/languages/vercel.png",
+      "/languages/firebase.png"
+    ],
+    "showGitHubButton": true
+  },
+  {
+    "title": "F1 iCalendar",
+    "body": "Parse formula 1 races for the current season into a iCalendar file, which can be imported into any calendar",
+    "href": "https://github.com/amunds1/f1-ical",
+    "showcaseImage": "",
+    "createdWith": ["/languages/rust.png"],
+    "showGitHubButton": true
+  },
+  {
+    "title": "Portfolio",
+    "body": "My own portfolio page",
+    "href": "",
+    "showcaseImage": "",
+    "createdWith": ["/languages/astro.svg"],
+    "showGitHubButton": true
+  },
+  {
+    "title": "Overtakst API",
+    "body": "A service which gathers listing price as well as sale price for for a given apartment, calculates the difference and stores it in a database",
+    "href": "",
+    "showcaseImage": "",
+    "createdWith": [
+      "/languages/python.png",
+      "/languages/railway.png",
+      "/languages/mongodb.png"
+    ],
+    "showGitHubButton": false
+  },
+  {
+    "title": "NTNU Online Webcalendar",
+    "body": "Webcal for events hosted by NTNU Online",
+    "href": "https://github.com/amunds1/NTNU-Online-Webcal",
+    "showcaseImage": "",
+    "createdWith": [
+      "/languages/javascript.png",
+      "/languages/express.png",
+      "/languages/heroku.png"
+    ],
+    "showGitHubButton": true
+  },
+  {
+    "title": "NTNU Online Event Notifier",
+    "body": "Event notifier for events hosted by Online",
+    "href": "https://github.com/amunds1/NTNU-Online-Event-Notifier",
+    "showcaseImage": "",
+    "createdWith": [
+      "/languages/javascript.png",
+      "/languages/express.png",
+      "/languages/heroku.png"
+    ],
+    "showGitHubButton": true
+  }
+]
