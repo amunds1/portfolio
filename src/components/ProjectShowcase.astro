@@ -8,6 +8,8 @@ export interface Props {
   showGitHubButton?: boolean;
 }
 
+import { Image } from "@astrojs/image/components";
+
 const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
   Astro.props;
 ---
@@ -21,7 +23,11 @@ const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
     <h4>Created using</h4>
 
     <div class="createdWith">
-      {createdWith.map((item) => <img height="50px" width="auto" src={item} />)}
+      {
+        createdWith.map((item) => (
+          <img height={"50px"} width={"auto"} src={item} alt={item} />
+        ))
+      }
     </div>
 
     {

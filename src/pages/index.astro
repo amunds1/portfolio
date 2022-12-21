@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import ProjectShowcase from "../components/ProjectShowcase.astro";
 import projects from "../../projects.json";
+import { Image } from "@astrojs/image/components";
 
 export interface Props {
   title: string;
@@ -29,7 +30,7 @@ export interface Props {
             ><img src="mail.png" height="auto" width="50px" />
           </a>
           <a href={"https://github.com/amunds1"} target="_blank">
-            <img src="github.png" height="auto" width="50px" />
+            <img src={"github.png"} height="auto" width="50px" alt={"GitHub"} />
           </a>
           <a
             href="https://www.linkedin.com/in/andreas-amundsen/"
