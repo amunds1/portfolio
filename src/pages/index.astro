@@ -1,17 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ProjectShowcase from "../components/ProjectShowcase.astro";
+import ProjectShowcase, { Props } from "../components/ProjectShowcase.astro";
 import projects from "../../projects.json";
-import { Image } from "@astrojs/image/components";
-
-export interface Props {
-  title: string;
-  body: string;
-  href: string;
-  showcaseImage: string;
-  createdWith: string[];
-  showGitHubButton?: boolean;
-}
 ---
 
 <Layout title="Andreas Amundsen Portfolio">
