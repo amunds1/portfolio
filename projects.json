@@ -18,7 +18,7 @@
   {
     "title": "Portfolio",
     "body": "My own portfolio page",
-    "href": "",
+    "href": "https://github.com/amunds1/portfolio",
     "showcaseImage": "",
     "createdWith": ["astro.svg"],
     "showGitHubButton": true
