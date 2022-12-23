@@ -26,7 +26,12 @@
     "body": "A service which gathers listing price as well as sale price for for a given apartment and calculates the difference. The results is stored in a database for further analysis",
     "href": "",
     "showcaseImage": "",
-    "createdWith": ["python.svg", "railway.svg", "mongodb-icon.svg"],
+    "createdWith": [
+      "python.svg",
+      "railway.svg",
+      "heroku-icon.svg",
+      "mongodb-icon.svg"
+    ],
     "showGitHubButton": false
   },
   {
