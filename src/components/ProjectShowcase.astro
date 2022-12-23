@@ -18,12 +18,12 @@ const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
       {title}
     </h2>
     {body}
-    <h4>Created using</h4>
+    <!-- <h4>Created using</h4> -->
 
     <div class="createdWith">
       {
         createdWith.map((item) => (
-          <img height={"50px"} width={"auto"} src={item} alt={item} />
+          <img height={"35px"} width={"auto"} src={item} alt={item} />
         ))
       }
     </div>
@@ -61,11 +61,8 @@ const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
       opacity: 0.8;
     }
 
-    .project-showcase-card {
-    }
-
     .createdWith {
-      display: flex;
+      margin-top: 1rem;
     }
 
     .createdWith > img {

@@ -4,7 +4,13 @@
     "body": "A game which is developed to be used in my master thesis at NTNU, fall 2023",
     "href": "https://github.com/amunds1/5x5game-masterthesis",
     "showcaseImage": "",
-    "createdWith": ["nextjs.png", "vercel.png", "firebase.png"],
+    "createdWith": [
+      "typescript-icon.svg",
+      "react.svg",
+      "nextjs-icon.svg",
+      "vercel.png",
+      "firebase.svg"
+    ],
     "showGitHubButton": true
   },
   {
@@ -12,7 +18,7 @@
     "body": "Parse formula 1 races for the current season into a iCalendar file, which can be imported into any calendar",
     "href": "https://github.com/amunds1/f1-ical",
     "showcaseImage": "",
-    "createdWith": ["rust.png"],
+    "createdWith": ["rust.svg"],
     "showGitHubButton": true
   },
   {
@@ -20,7 +26,7 @@
     "body": "My own portfolio page",
     "href": "https://github.com/amunds1/portfolio",
     "showcaseImage": "",
-    "createdWith": ["astro.svg"],
+    "createdWith": ["typescript-icon.svg", "astro.svg"],
     "showGitHubButton": true
   },
   {
@@ -28,7 +34,7 @@
     "body": "A service which gathers listing price as well as sale price for for a given apartment, calculates the difference and stores it in a database",
     "href": "",
     "showcaseImage": "",
-    "createdWith": ["python.png", "railway.svg", "mongodb.png"],
+    "createdWith": ["python.svg", "railway.svg", "mongodb-icon.svg"],
     "showGitHubButton": false
   },
   {
@@ -36,7 +42,7 @@
     "body": "Webcal for events hosted by NTNU Online",
     "href": "https://github.com/amunds1/NTNU-Online-Webcal",
     "showcaseImage": "",
-    "createdWith": ["javascript.png", "express.png", "heroku.png"],
+    "createdWith": ["javascript.svg", "heroku-icon.svg"],
     "showGitHubButton": true
   },
   {
@@ -44,7 +50,7 @@
     "body": "Event notifier for events hosted by Online",
     "href": "https://github.com/amunds1/NTNU-Online-Event-Notifier",
     "showcaseImage": "",
-    "createdWith": ["javascript.png", "express.png", "heroku.png"],
+    "createdWith": ["javascript.svg", "heroku-icon.svg"],
     "showGitHubButton": true
   }
 ]
