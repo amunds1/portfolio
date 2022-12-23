@@ -1,7 +1,7 @@
 [
   {
     "title": "5x5game",
-    "body": "A game which is developed to be used in my master thesis at NTNU, fall 2023",
+    "body": "A puzzle, wordle-like, game which is being used in my master thesis at NTNU",
     "href": "https://github.com/amunds1/5x5game-masterthesis",
     "showcaseImage": "",
     "createdWith": [
@@ -15,31 +15,45 @@
   },
   {
     "title": "F1 iCalendar",
-    "body": "Parse formula 1 races for the current season into a iCalendar file, which can be imported into any calendar",
+    "body": "A service which parses formula 1 races for the current season into a iCalendar file, which can be imported into any calendar",
     "href": "https://github.com/amunds1/f1-ical",
     "showcaseImage": "",
-    "createdWith": ["rust.svg"],
-    "showGitHubButton": true
-  },
-  {
-    "title": "Portfolio",
-    "body": "My own portfolio page",
-    "href": "https://github.com/amunds1/portfolio",
-    "showcaseImage": "",
-    "createdWith": ["typescript-icon.svg", "astro.svg"],
+    "createdWith": ["rust.svg", "docker-icon.svg"],
     "showGitHubButton": true
   },
   {
     "title": "Overtakst API",
-    "body": "A service which gathers listing price as well as sale price for for a given apartment, calculates the difference and stores it in a database",
+    "body": "A service which gathers listing price as well as sale price for for a given apartment and calculates the difference. The results is stored in a database for further analysis",
     "href": "",
     "showcaseImage": "",
     "createdWith": ["python.svg", "railway.svg", "mongodb-icon.svg"],
     "showGitHubButton": false
   },
   {
+    "title": "Portfolio",
+    "body": "This portfolio page, showing off personal projects and contact information",
+    "href": "https://github.com/amunds1/portfolio",
+    "showcaseImage": "",
+    "createdWith": ["typescript-icon.svg", "astro.svg"],
+    "showGitHubButton": true
+  },
+  {
+    "title": "Sangbok",
+    "body": "A digital songbook for scouts, developed for the 1. Fredrikstad scout group, as my bachelor thesis",
+    "href": "https://github.com/1-fredrikstad/sangbok",
+    "showcaseImage": "",
+    "createdWith": [
+      "typescript-icon.svg",
+      "react.svg",
+      "nextjs-icon.svg",
+      "sanity.png",
+      "cypress-icon.svg"
+    ],
+    "showGitHubButton": true
+  },
+  {
     "title": "NTNU Online Webcalendar",
-    "body": "Webcal for events hosted by NTNU Online",
+    "body": "A service which exposes a iCalendar subscription link for events hosted by the student organization Online at NTNU",
     "href": "https://github.com/amunds1/NTNU-Online-Webcal",
     "showcaseImage": "",
     "createdWith": ["javascript.svg", "heroku-icon.svg"],
@@ -47,7 +61,7 @@
   },
   {
     "title": "NTNU Online Event Notifier",
-    "body": "Event notifier for events hosted by Online",
+    "body": "A service which exposes a iCalendar subscription link for when registrations for events, hosted by the student organization Online at NTNU, opens",
     "href": "https://github.com/amunds1/NTNU-Online-Event-Notifier",
     "showcaseImage": "",
     "createdWith": ["javascript.svg", "heroku-icon.svg"],

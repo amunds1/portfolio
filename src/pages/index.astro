@@ -6,7 +6,7 @@ import projects from "../../projects.json";
 
 <Layout title="Andreas Amundsen Portfolio">
   <main>
-    <h1>About <span class="text-gradient">me</span></h1>
+    <h1><span class="text-gradient">About me</span></h1>
     <div class="aboutMe">
       <img class="profileImage" src="pb.jpg" />
       <div>
@@ -31,7 +31,7 @@ import projects from "../../projects.json";
         </div>
       </div>
     </div>
-    <h1>My <span class="text-gradient">personal projects</span></h1>
+    <h1><span class="text-gradient">My projects</span></h1>
     <ul role="list" class="link-card-grid">
       {projects.map((project: Props) => <ProjectShowcase {...project} />)}
     </ul>
