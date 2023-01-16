@@ -1,8 +1,8 @@
 [
   {
-    "title": "5x5game",
+    "title": "LetterLink",
     "body": "A puzzle, wordle-like, game which is being used in my master thesis at NTNU",
-    "href": "https://github.com/amunds1/5x5game-masterthesis",
+    "href": "https://github.com/amunds1/LetterLink",
     "showcaseImage": "",
     "createdWith": [
       "typescript-icon.svg",
