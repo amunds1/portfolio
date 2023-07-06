@@ -11,8 +11,9 @@ import projects from "../../projects.json";
       <img class="profileImage" src="pb.jpg" />
       <div>
         <p>
-          Fifth year computer science student at NTNU. Currently writing my
-          master thesis
+          Software developer @ <a href="https://www.bekk.no/" target="_blank"
+            >Bekk</a
+          >
         </p>
 
         <div class="contact">
@@ -76,6 +77,15 @@ import projects from "../../projects.json";
     height: 70%;
     justify-content: space-between;
     font-size: large;
+  }
+
+  .aboutMe > div > p {
+    padding-bottom: 1rem;
+  }
+
+  .aboutMe > div > p > a {
+    color: var(--accent);
+    text-decoration: none;
   }
 
   .contact {
