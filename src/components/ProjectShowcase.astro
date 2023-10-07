@@ -18,12 +18,11 @@ const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
       {title}
     </h2>
     {body}
-    <!-- <h4>Created using</h4> -->
-
-    <div class="createdWith">
+    
+    <div class="mt-4 flex gap-5">
       {
         createdWith.map((item) => (
-          <img height={"35px"} width={"auto"} src={item} alt={item} />
+          <img class="object-contain h-9 w-auto" src={item} alt={item} />
         ))
       }
     </div>
