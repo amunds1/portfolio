@@ -6,21 +6,26 @@ import projects from "../../projects.json";
 
 <Layout title="Andreas Amundsen Portfolio">
   <main>
-    <h1><span class="text-gradient">About me</span></h1>
-    <div class="aboutMe">
-      <img class="profileImage" src="pb.jpg" />
-      <div>
-        <p>
-          Software developer @ <a href="https://www.bekk.no/" target="_blank"
-            >Bekk</a
+    <h1 class="font-[3rem] p-6"><div class="text-gradient">About me</div></h1>
+    <div class="aboutMe flex items-center justify-center flex-wrap">
+      <img
+        class="profileImage rounded-full w-48 h-48 object-cover object-center border-4 border-white shadow-lg"
+        src="pb.jpg"
+      />
+      <div class="ml-8">
+        <p class="text-lg font-medium text-gray-700">
+          Software developer @ <a
+            href="https://www.bekk.no/"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700">Bekk</a
           >
         </p>
 
-        <div class="contact">
-          <a href="mailto:andreas@amundsen.dev"
-            ><img src="mail.png" height="auto" width="50px" />
+        <div class="contact flex flex-row mt-4">
+          <a href="mailto:andreas@amundsen.dev" class="mr-4">
+            <img src="mail.png" height="auto" width="50px" />
           </a>
-          <a href={"https://github.com/amunds1"} target="_blank">
+          <a href={"https://github.com/amunds1"} target="_blank" class="mr-4">
             <img src={"github.png"} height="auto" width="50px" alt={"GitHub"} />
           </a>
           <a
@@ -33,7 +38,7 @@ import projects from "../../projects.json";
       </div>
     </div>
     <h1><span class="text-gradient">My projects</span></h1>
-    <ul role="list" class="link-card-grid">
+    <ul role="list" class="flex flex-col gap-6">
       {projects.map((project: Props) => <ProjectShowcase {...project} />)}
     </ul>
   </main>
@@ -56,56 +61,5 @@ import projects from "../../projects.json";
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
-  }
-  .aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    line-height: 1.6;
-    margin: 1rem 0;
-    /* border: 1px solid rgba(var(--accent), 25%); */
-    /* background-color: white; */
-
-    border-radius: 0.4rem;
-    width: 100%;
-  }
-
-  .aboutMe > div {
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    justify-content: space-between;
-    font-size: large;
-  }
-
-  .aboutMe > div > p {
-    padding-bottom: 1rem;
-  }
-
-  .aboutMe > div > p > a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .contact img {
-    margin-right: 1rem;
-  }
-
-  .link-card-grid {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 1rem;
-  }
-  .profileImage {
-    border-radius: 5%;
-    max-width: 20rem;
-    width: 100%;
   }
 </style>

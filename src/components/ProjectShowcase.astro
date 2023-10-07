@@ -12,109 +12,23 @@ const { href, title, body, showcaseImage, createdWith, showGitHubButton } =
   Astro.props;
 ---
 
-<div class="project-showcase-card">
-  <div>
-    <h2>
-      {title}
-    </h2>
-    {body}
+<a href={href ? href : ""} target="_blank">
+  <div class="flex bg-white shadow-sm p-6 rounded-lg items-start gap-2">
+    <div class="flex flex-col gap-3">
+      <h2 class="text-lg font-semibold">{title}</h2>
 
-    <div class="mt-4 flex gap-5">
-      {
-        createdWith.map((item) => (
-          <img class="object-contain h-9 w-auto" src={item} alt={item} />
-        ))
-      }
+      <p>{body}</p>
+
+      <div class="mt-4 flex gap-5">
+        {
+          createdWith.map((item) => (
+            <img class="object-contain h-9 w-auto" src={item} alt={item} />
+          ))
+        }
+      </div>
+
+      <img height="auto" width="80%" src={showcaseImage} />
     </div>
-
-    {
-      showGitHubButton && (
-        <a href={href} target="_blank" class="button">
-          Open in GitHub
-        </a>
-      )
-    }
+    {showGitHubButton && <img class="w-[2rem]" src="external-link-icon.svg" />}
   </div>
-  <img height="auto" width="80%" src={showcaseImage} />
-
-  <style>
-    .project-showcase-card {
-      list-style: none;
-      display: flex;
-      padding: 0.15rem;
-      background-color: var(--card-color);
-      /* background-image: var(--accent-gradient); */
-      background-size: 400%;
-      border-radius: 0.35rem;
-      background-position: 100%;
-      transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -2px rgba(0, 0, 0, 0.1);
-
-      text-decoration: none;
-      line-height: 1.4;
-      padding: 1rem 1.3rem;
-
-      color: #111;
-
-      opacity: 0.8;
-    }
-
-    .project-showcase-card {
-      display: grid;
-      grid-template-columns: 100%;
-
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Project description */
-    .project-showcase-card > div {
-      display: flex;
-      flex-direction: column;
-    }
-
-    h2 {
-      margin: 0;
-      font-size: 1.25rem;
-      transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-      margin-bottom: 1rem;
-    }
-
-    .button {
-      display: inline-block;
-      outline: 0;
-      border: 0;
-      cursor: pointer;
-      background-color: white;
-      border-radius: 4px;
-      padding: 8px 16px;
-      font-size: 16px;
-      font-weight: 600;
-      color: rgb(43, 108, 176);
-      border: 1px solid rgb(66, 153, 225);
-      line-height: 26px;
-      width: fit-content;
-      margin-top: 1.5rem;
-      text-decoration: none;
-    }
-
-    h4 {
-      margin-bottom: 0.5rem;
-      color: rgba(0, 0, 0, 0.8);
-      font-weight: 6 00;
-    }
-
-    p {
-      margin-top: 0.5rem;
-      margin-bottom: 0;
-      color: #444;
-    }
-    .project-showcase-card:is(:hover, :focus-within) {
-      background-position: 0;
-    }
-    .project-showcase-card:is(:hover, :focus-within) h2 {
-      color: rgb(var(--accent));
-    }
-  </style>
-</div>
+</a>
