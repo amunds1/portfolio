@@ -61,17 +61,15 @@ import projects from "../../projects.json";
       </h1>
       <ul role="list" class="flex flex-col gap-6 mt-6">
         {
-          projects.map((project: Props) => {
-            if (project.href) {
-              return (
-                <a href={project.href} target="_blank">
-                  <ProjectShowcase {...project} />
-                </a>
-              );
-            }
-
-            return <ProjectShowcase {...project} />;
-          })
+          projects.map((project: Props) =>
+            project.href ? (
+              <a href={project.href} target="_blank">
+                <ProjectShowcase {...project} />
+              </a>
+            ) : (
+              <ProjectShowcase {...project} />
+            ),
+          )
         }
       </ul>
     </span>
