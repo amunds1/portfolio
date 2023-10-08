@@ -15,25 +15,13 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="m-auto p-6 max-w-[60ch] leading-relaxed bg-white">
     <slot />
   </body>
 </html>
 <style is:global>
-  :root {
-    --background-color: #fff;
-    --accent: rgba(124, 58, 237, 1);
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(43, 46, 74) 0%,
-      rgb(232, 69, 69) 13%,
-      rgb(144, 55, 73) 43%
-    );
-  }
   html {
     font-family: system-ui, sans-serif;
-    background-color: var(--background-color);
-    line-height: 1.6;
   }
   code {
     font-family:

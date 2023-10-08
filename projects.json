@@ -39,7 +39,7 @@
     "body": "This portfolio page, showing off personal projects and contact information",
     "href": "https://github.com/amunds1/portfolio",
     "showcaseImage": "",
-    "createdWith": ["typescript-icon.svg", "astro.svg"],
+    "createdWith": ["typescript-icon.svg", "astro.svg", "tailwind.svg"],
     "showGitHubButton": true
   },
   {
