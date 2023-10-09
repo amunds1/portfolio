@@ -77,7 +77,11 @@ import projects from "../../projects.json";
                 <ProjectShowcase {...project} />
               </a>
             ) : (
-              <ProjectShowcase {...project} />
+              <>
+                <div role="listitem">
+                  <ProjectShowcase {...project} />
+                </div>
+              </>
             ),
           )
         }
