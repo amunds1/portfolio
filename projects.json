@@ -35,6 +35,14 @@
     "showGitHubButton": false
   },
   {
+    "title": "Shopping list",
+    "body": "A simple shopping list app for iOS, written in Swift",
+    "href": "https://github.com/amunds1/shoppinglist-ios",
+    "showcaseImage": "",
+    "createdWith": ["swift.svg"],
+    "showGitHubButton": true
+  },
+  {
     "title": "Portfolio",
     "body": "This portfolio page, showing off personal projects and contact information",
     "href": "https://github.com/amunds1/portfolio",
