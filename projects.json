@@ -35,7 +35,7 @@
     "showGitHubButton": false
   },
   {
-    "title": "Shopping list",
+    "title": "Shopping List",
     "body": "A simple shopping list app for iOS, written in Swift",
     "href": "https://github.com/amunds1/shoppinglist-ios",
     "showcaseImage": "",
